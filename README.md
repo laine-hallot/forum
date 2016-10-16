@@ -7,6 +7,6 @@ Things you may want to cover:
 
 * Ruby 2.3.1p112
 
-* Sqllite
+* Sqlite
 
 * Rails 5.0.0.1
