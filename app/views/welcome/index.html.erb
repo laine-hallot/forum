@@ -34,9 +34,9 @@
 
     <h1>Boards</h1>
     <div id = "">
-        <a href = "/articles/">View Threads</a>
+        <%= link_to 'View Threads', controller: 'articles' %>
     </div>
 
     <div id = "MThread">
-        <a href = "/articles/new">Make a New Thread</a>
+        <%= link_to 'Make a New Thread', new_article_path %>
     </div>
