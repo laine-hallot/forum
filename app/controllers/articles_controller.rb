@@ -3,24 +3,28 @@ class ArticlesController < ApplicationController
    def index
         @articles = Article.all
    end
- 
-   def show 
+
+   def show
         @article = Article.find(params[:id])
    end
 
-   def new
-   end
+  def truncate
+  @article = @atricle.id > 2 ? "#{string[0...max]}..." : string
+  end
 
-    def create
+  def new
+  end
+
+  def create
       @article = Article.new(article_params)
       @article.save
       redirect_to @article
-    end
-    
+  end
 
-   
-      def article_params
-        params.require(:article).permit(:title, :text)
-      end
-    
- end 
+
+
+  def article_params
+        params.require(:article).permit(:title, :text, :URL)
+  end
+
+ end

@@ -1,11 +1,23 @@
+<head>
+      <style>
+          #MThread{
+            margin:1em auto;
+            width:56.69em;
+            padding:0 .62em;
+            font:1.2em/1.62em sans-serif;
+            background-color: #f9f9f9;
+         }
+       </style>
+</head>
+  <img src=<%= @article.URL %>>
 <p>
   <strong>Title:</strong>
   <%= @article.title %>
 </p>
- 
+
 <p>
   <strong>Text:</strong>
-  <%= @article.text %>
+  <%= @truncate%>
 </p>
 <p>
   <strong>Post Number:</strong>

@@ -7,33 +7,47 @@
            font:1.2em/1.62em sans-serif;
            background-color: #f9f9f9;
        }
+
+       #MThread{
+           margin:1em auto;
+           width:56.69em;
+           padding:0 .62em;
+           font:1.2em/1.62em sans-serif;
+           background-color: #f9f9f9;
+       }
+
        h1{
            font:1.2em/1.6em sans-serif;
            font-weight: bold;
        }
 
         #Info{
-            font:1.2em/1.62em sans-serif; 
-            
+            font:1.2em/1.62em sans-serif;
+            background-color:
         }
+
+        a{
+          color: #cc0000
+        }
+
    </style>
 </head>
 
 <div class="box-outer" id="announce">
     <div class="box-inner">
         <div class="boxbar">
-          <h2>Info</h2>
+          <h1>Info</h1>
           </div>
           <div class="boxcontent">
               <div id="Info">
                   <p>The Rails Homework Fourm is a simple message board that is aimed to facilitate the discussion of homework that comes form a specific school, in this case Gulliver Prep, and Gulliver Miller. While mainly focused on homework the forum can also be used to discuss other topics, like student life, technology, music, video games, and other topics of leasure. These catagories will eventually be separated into thier own boards but for now all topics can discussed on he main board </p><br><p>Be sure to familiarize yourself with the <a href="/rules">Rules</a> before posting, and read the <a href="/faq" title="Frequently Asked Questions">FAQ</a> if you wish to learn more about how to use the site.</p>
-              </div> 
+              </div>
           </div>
     </div>
 </div>
 
     <h1>Boards</h1>
-    <div id = "">
+    <div id = "VThreads">
         <%= link_to 'View Threads', controller: 'articles' %>
     </div>
 
